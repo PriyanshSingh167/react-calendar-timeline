@@ -9,7 +9,7 @@ and this project adheres (more or less) to [Semantic Versioning](http://semver.o
 
 * Add unit argument to onZoom and onTimeChange callbacks
 * Add `className` prop to Timeline component to override `react-calendar-timeline` class #682
-* Fix injecting custom vertical line's class names for time periods longer than day
+* Fix injecting custom vertical line's class names for time periods longer than a day
 
 ## 0.26.7
 
@@ -59,11 +59,11 @@ update to `node-sass@4.12.0` for newer versions of node.
 
 ## 0.26.2
 
-* render the items layer after columns and rows for layring @ilaiwi
+* render the items layer after columns and rows for layering @ilaiwi
 
 ## 0.26.1
 
-* fix issue where mouse down gets stuck when scrolling the timeline #526 @KhalidArdah
+* fix the issue where mouse down gets stuck when scrolling the timeline #526 @KhalidArdah
 
 you can as well solve the issue without upgrading by adding the following style
 
@@ -87,7 +87,7 @@ you can as well solve the issue without upgrading by adding the following style
 
 #### Breaking
 
-* Removed `<InfoLabel />` in favour of allowing for custom component to be rendered on move or resize. Check out the demo in `demo/app/demo-custom-info-label` for an example on how to display your own custom info label or [this example](https://codesandbox.io/s/timeline-demo-info-label-neec9).
+* Removed `<InfoLabel />` in favor of allowing for custom component to be rendered on move or resize. Check out the demo in `demo/app/demo-custom-info-label` for an example on how to display your own custom info label or [this example](https://codesandbox.io/s/timeline-demo-info-label-neec9).
 
 
 ## 0.25.4
@@ -111,7 +111,7 @@ you can as well solve the issue without upgrading by adding the following style
 
 ### Custom Headers
 
-This new feature gives more control to dev to create customizable headers to provide better UI. Now user have more control through a set of new components to render headers. This new feature came with a breaking change though.
+This new feature gives more control to dev to create customizable headers to provide better UI. Now users have more control through a set of new components to render headers. This new feature came with a breaking change though.
 
 ```jsx
 import Timeline, {
@@ -195,7 +195,7 @@ Check out the new docs before please [here](https://github.com/namespace-ee/reac
 
 ### Stack per group
 
-now you can stack choose to stack items in individual groups by providing the property `stackItems` in group object. The property in group overrides the timeline prop `stackItems`.
+now you can stack choose to stack items in individual groups by providing the property `stackItems` in the group object. The property in group overrides the timeline prop `stackItems`.
 
 ```
 const groups = [{ id: 1, title: 'group 1', stackItems: false }, { id: 2, title: 'group 2', stackItems: true }]
@@ -279,7 +279,7 @@ ReactDOM.render(
 
 ### Added
 
-* ability to set classes for timeline columns depending on its time - #364
+* ability to set classes for timeline columns depending on their time - #364
 * ability to add custom classes and custom heights to the timeline rows - #367
 * add `scrollRef` to allow for programmatically scrolling timeline - #372
 
@@ -299,7 +299,7 @@ ReactDOM.render(
 ### Fixed
 
 * Date passed to CursorMarker child is wrong - #379
-* groupRenderer doesnt work for right sidebar - #377
+* groupRenderer doesn't work for a right sidebar - #377
 
 ### 0.18.0
 
@@ -309,7 +309,7 @@ ReactDOM.render(
 
 ### Added
 
-* timeline markers - user can have more control over markers that are rendered on the timeline. See `TimelineMarkers` section of README for documentation - #327
+* timeline markers - users can have more control over markers that are rendered on the timeline. See `TimelineMarkers` section of README for documentation - #327
 
 ### Breaking
 
@@ -363,7 +363,7 @@ from 'react-calendar-timeline'
 
 ### Fixed
 
-* fix for issue where NaN is returned in onItemMove if the startTime is not unix timestamp #300
+* fix for an issue where NaN is returned in onItemMove if the startTime is not unix timestamp #300
 
 ### 0.16.3
 
@@ -377,7 +377,7 @@ from 'react-calendar-timeline'
 
 ### Fixed
 
-* clicking on canvas when item is selected now calls `onCanvasClicked` - #312
+* clicking on canvas when an item is selected now calls `onCanvasClicked` - #312
 
 ### 0.16.1
 
@@ -392,7 +392,7 @@ from 'react-calendar-timeline'
 ### Breaking
 
 * removed `fixedHeader` prop in favor of using `position: sticky` by default
-* removed import of stylesheets in library code, put onus on user to handle this stylesheet
+* removed import of stylesheets in library code, put the onus on the user to handle this stylesheet
 
 ## 0.15.12
 
@@ -410,7 +410,7 @@ from 'react-calendar-timeline'
 
 ### Fixed
 
-* fix issue with time report with onItem\* callbacks for browsers that don't support `x` property in rect object - #266
+* fix an issue with time report with onItem\* callbacks for browsers that don't support `x` property in rect object - #266
 
 ## 0.15.9
 
@@ -446,7 +446,7 @@ This release contains a lot of code cleanup as well as an API change to the `ite
 ### Fixed
 
 * Fixed issue with state not properly updated when ending resize #173
-* Fixed issue with onItem\* events not reporting correct time when timeline has outer padding #227
+* Fixed issue with onItem\* events not reporting correct time when the timeline has outer padding #227
 
 ## 0.15.5
 
@@ -494,7 +494,7 @@ Plugin support and sticky header!
 
 ## [0.14.11]
 
-Plenty of bugfixes, tests and new demos in these 0.14 patch releases.
+Plenty of bugfixes, tests, and new demos in these 0.14 patch releases.
 
 ### Fixed
 
@@ -586,7 +586,7 @@ Plenty of bugfixes, tests and new demos in these 0.14 patch releases.
 
 ### Added
 
-* Allow disabling selection clicks on items #58 by @sjchmiela
+* Allow disabling selection clicks on item #58 by @sjchmiela
 * Allow passing additional props to `Item`'s `<div/>` #58 by @sjchmiela
 * Add `clickTolerance` so dragging more than 3 pixels is no longer a click @mariusandra
 
